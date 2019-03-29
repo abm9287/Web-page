@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Example of HTML Form Controls</title>
+</head>
+<body>
+	<!-- Browser may generate "Not secure" warning due to presence of password field in insecure form. We've created this form just for demo purpose. -->
+    <form>
+        <fieldset>
+        	<legend>Sign In</legend>
+            <label for="user-name">Username:</label>
+        	<input type="text" name="username" id="user-name">
+            <label for="user-pwd">Password:</label>
+        	<input type="password" name="user-password" id="user-pwd">
+        </fieldset>
+        <fieldset>
+        	<legend>Gender</legend>
+            <input type="radio" name="sex" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female">
+            <label for="female">Female</label>
+        </fieldset>
+        <fieldset>
+        	<legend>Hobbies</legend>
+            <input type="checkbox" name="sports" id="soccer">
+            <label for="soccer">Soccer</label>
+            <input type="checkbox" name="sports" id="cricket">
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" name="sports" id="cricket">
+            <label for="baseball">Baseball</label>
+        </fieldset>
+        <fieldset>
+        	<legend>Address</legend>
+            <textarea rows="3" cols="30"></textarea>
+        </fieldset>
+        <fieldset>
+        	<legend>Upload file</legend>
+            <label for="file-select">Upload:</label>
+        	<input type="file" name="upload" id="file-select">
+        </fieldset>
+        <fieldset>
+        	<legend>Select Your City</legend>
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="sydney">Sydney</option>
+                <option value="melbourne">Melbourne</option>
+                <option value="cromwell">Cromwell</option>
+            </select>
+        </fieldset>
+        <fieldset>
+        	<legend>Action</legend>
+            <input type="submit" value="Submit">
+        	<input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>                             
